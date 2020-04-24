@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/numberField"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lcd"
+        android:fontFamily="@font/armata"
+        android:gravity="right|bottom"
+        android:hint="0."
+        android:inputType="phone"
+        android:textSize="60dp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="7"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="8"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="9"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onOperationClick"
+                android:text="/"
+                android:background="@drawable/fun_but"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="4"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="5"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="6"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onOperationClick"
+                android:text="*"
+                android:background="@drawable/fun_but"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="1"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="2"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="3"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onOperationClick"
+                android:text="-"
+                android:background="@drawable/fun_but"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text="0"
+                android:background="@drawable/num_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNumberClick"
+                android:text=","
+                android:background="@drawable/fun_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onOperationClick"
+                android:text="+"
+                android:background="@drawable/fun_but"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onOperationClick"
+                android:text="="
+                android:background="@drawable/fun_but"
+                android:textSize="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
