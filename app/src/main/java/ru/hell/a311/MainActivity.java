@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView lcd;
-    private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt0, btC, btDot, btAdd, btSub, btMul, btDiv, btRes;
+    private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt0, btC, btDot, btAdd, btSub, btMul, btDiv, btRes, btPM, btPrc;
 
     private float valueOne, valueTwo;
 
@@ -173,7 +173,48 @@ public class MainActivity extends AppCompatActivity {
                 lcd.setText(lcd.getText() + ".");
             }
         });
+
+        btPM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valueOne = Float.parseFloat(String.valueOf(lcd.getText())) ;
+                valueOne = valueOne * -1;
+                lcd.setText(valueOne + "");
+            }
+
+        });
+
+        btPrc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                valueTwo = Float.parseFloat(lcd.getText() + "");
+
+                if (addition == true) {
+                    lcd.setText(valueTwo + ((valueOne / 100) * valueTwo) + "");
+                    addition = false;
+                }
+
+                if (subtract == true) {
+                    lcd.setText(valueOne - ((valueOne / 100) * valueTwo) + "");
+                    subtract = false;
+                }
+
+                if (multiplication == true) {
+                    lcd.setText(valueOne * ((valueOne / 100) * valueTwo) + "");
+                    multiplication = false;
+                }
+
+                if (division == true) {
+                    lcd.setText(valueOne / ((valueOne / 100) * valueTwo) + "");
+                    division = false;
+                }
+            }
+
+
+        });
     }
+
+
 
     private void init() {
         bt1 = findViewById(R.id.button1);
@@ -187,6 +228,8 @@ public class MainActivity extends AppCompatActivity {
         bt9 = findViewById(R.id.button9);
         bt0 = findViewById(R.id.button0);
         btC = findViewById(R.id.buttonC);
+        btPM  = findViewById(R.id.buttonPlusMinus);
+        btPrc  = findViewById(R.id.buttonPercent);
         btDot = findViewById(R.id.buttonDot);
         btAdd = findViewById(R.id.buttonAdd);
         btSub = findViewById(R.id.buttonSub);

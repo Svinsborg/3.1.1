@@ -10,213 +10,239 @@
     <TextView
         android:id="@+id/numberLcd"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
         android:background="@drawable/lcd"
         android:fontFamily="@font/armata"
         android:gravity="right|bottom"
         android:hint="0."
-        android:padding="1dp"
         android:inputType="phone"
+        android:padding="1dp"
         android:textSize="60dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_marginTop="20dp">
+
+
+
         <Button
             android:id="@+id/buttonC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
-            android:text="C"
+            android:layout_weight="1"
             android:background="@drawable/fun_but"
+            android:text="C"
             android:textSize="30dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <Button
+            android:id="@+id/buttonPlusMinus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="±"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="7"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/buttonPercent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="%"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="8"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="9"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/buttonDiv"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="/"
-                android:background="@drawable/fun_but"
-                android:textSize="30dp" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="4"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="5"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="7"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="6"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="8"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/buttonMul"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="*"
-                android:background="@drawable/fun_but"
-                android:textSize="30dp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="9"
+            android:textSize="30dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="÷"
+            android:textSize="30dp" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="1"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="2"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="4"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="3"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="5"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/buttonSub"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="-"
-                android:background="@drawable/fun_but"
-                android:textSize="30dp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="6"
+            android:textSize="30dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <Button
+            android:id="@+id/buttonMul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="×"
+            android:textSize="30dp" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/button0"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="0"
-                android:background="@drawable/num_but"
-                android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
 
-            <Button
-                android:id="@+id/buttonDot"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text=","
-                android:background="@drawable/fun_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="1"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/buttonAdd"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="+"
-                android:background="@drawable/fun_but"
-                android:textSize="30dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="2"
+            android:textSize="30dp" />
 
-            <Button
-                android:id="@+id/buttonResult"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="1dp"
-                android:text="="
-                android:background="@drawable/fun_but"
-                android:textSize="30dp" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="3"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="-"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/num_but"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text=","
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="+"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/fun_but"
+            android:text="="
+            android:textSize="30dp" />
     </LinearLayout>
 </LinearLayout>
