@@ -1,248 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/numberLcd"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="5dp">
-
-    <TextView
-        android:id="@+id/numberLcd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:background="@drawable/lcd"
-        android:fontFamily="@font/armata"
-        android:gravity="right|bottom"
-        android:hint="0."
-        android:inputType="phone"
-        android:padding="1dp"
-        android:textSize="60dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:layout_marginTop="20dp">
+    android:layout_height="wrap_content"
+    android:background="@drawable/lcd"
+    android:fontFamily="@font/armata"
+    android:gravity="right|bottom"
+    android:hint="0."
+    android:inputType="phone"
+    android:padding="1dp"
+    android:textSize="60dp" />
 
 
+<Button
+    android:id="@+id/buttonC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/numberLcd"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/fun_but"
+    android:text="C"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonC"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="C"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/buttonPlusMinus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/numberLcd"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/buttonC"
+    android:background="@drawable/fun_but"
+    android:text="±"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonPlusMinus"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="±"
-            android:textSize="30dp" />
-
-        <Button
-            android:id="@+id/buttonPercent"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="%"
-            android:textSize="30dp" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1">
+<Button
+    android:id="@+id/buttonPercent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/numberLcd"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/buttonPlusMinus"
+    android:background="@drawable/fun_but"
+    android:text="%"
+    android:textSize="30dp" />
 
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="7"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonC"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/num_but"
+    android:text="7"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="8"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonPlusMinus"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/button7"
+    android:background="@drawable/num_but"
+    android:text="8"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="9"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button9"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonPercent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/button8"
+    android:background="@drawable/num_but"
+    android:text="9"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonDiv"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="÷"
-            android:textSize="30dp" />
-    </LinearLayout>
+<Button
+    android:id="@+id/buttonDiv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonPercent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/button9"
+    android:background="@drawable/fun_but"
+    android:text="÷"
+    android:textSize="30dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1">
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="4"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button7"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/num_but"
+    android:text="4"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="5"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button8"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_toEndOf="@+id/button4"
+    android:background="@drawable/num_but"
+    android:text="5"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="6"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button9"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_toEndOf="@+id/button5"
+    android:background="@drawable/num_but"
+    android:text="6"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonMul"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="×"
-            android:textSize="30dp" />
-    </LinearLayout>
+<Button
+    android:id="@+id/buttonMul"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonDiv"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_toEndOf="@+id/button6"
+    android:background="@drawable/fun_but"
+    android:text="×"
+    android:textSize="30dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1">
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button4"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/num_but"
+    android:text="1"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="1"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button5"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/button1"
+    android:background="@drawable/num_but"
+    android:text="2"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="2"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button6"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/button2"
+    android:background="@drawable/num_but"
+    android:text="3"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="3"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/buttonSub"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonMul"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/button3"
+    android:background="@drawable/fun_but"
+    android:text="-"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonSub"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="-"
-            android:textSize="30dp" />
-    </LinearLayout>
+<Button
+    android:id="@+id/button0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button1"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/num_but"
+    android:text="0"
+    android:textSize="30dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.1">
+<Button
+    android:id="@+id/buttonDot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button2"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_toEndOf="@+id/button0"
+    android:background="@drawable/fun_but"
+    android:text=","
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/button0"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/num_but"
-            android:text="0"
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/buttonAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button3"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_toEndOf="@+id/buttonDot"
+    android:background="@drawable/fun_but"
+    android:text="+"
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonDot"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text=","
-            android:textSize="30dp" />
+<Button
+    android:id="@+id/buttonResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonSub"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_toEndOf="@+id/buttonAdd"
+    android:background="@drawable/fun_but"
+    android:text="="
+    android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonAdd"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="+"
-            android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/buttonResult"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/fun_but"
-            android:text="="
-            android:textSize="30dp" />
-    </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
